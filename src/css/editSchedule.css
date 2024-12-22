@@ -1,0 +1,121 @@
+.edit-schedule {
+    max-width: 550px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #000000;
+    border-radius: 15px;
+    box-shadow: 0px 0px  5px 0px #f58a184a;
+    color: #f58a18;
+  }
+  
+  .edit-schedule h1 {
+    text-align: center;
+    color: #f58a1898;
+  }
+  
+  .edit-schedule form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .edit-schedule label {
+    margin-bottom: 7px;
+    color: #f58a18;
+  }
+  
+  .edit-schedule input,textarea {
+    resize: none;
+    padding: 10px;
+    color: #f7bf84be;
+    font-size: 16px;
+    border:1px solid #f58a1856;
+    border-radius: 10px;
+    width: 100%;
+    background: transparent;
+    box-sizing: border-box;
+  }
+  textarea{
+    height: 100px;
+  }
+  .edit-schedule input[type="date"] {
+    cursor: pointer;
+  }
+  
+  .edit-schedule button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #F58918;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-schedule button:hover {
+    background-color: #f58a1898;
+  }
+  
+  .edit-schedule button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  .edit-schedule .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .edit-schedule .form-group input {
+    margin-bottom: 10px;
+  }
+  
+  .add{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: fit-content;
+    padding: 10px 20px;
+    margin-top: 20px;
+    justify-content: end;
+    margin-bottom: 20px;
+    margin-left: 80%;
+    margin-right: 10px;
+
+  }
+  .random-image img{
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+  }
+  
+.icon{
+    display: flex;
+    width: fit-content;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 100px;
+} 
+  .edit-link,
+  .delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 18px;
+  color: #F58918;
+}
+
+.delete-btn {
+  color: #dc3545;
+}
+
+.delete-btn:hover {
+    color: #e60000;
+    background: transparent;
+  } 
+  .edit-link:hover {
+    color: #ca6a03;
+    background: transparent;
+  } 

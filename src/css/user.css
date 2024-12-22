@@ -1,0 +1,56 @@
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    padding: 5px;
+    border: 1px solid  #f58a1856;
+    ;
+}
+
+th {
+    background-color: #f58a18;
+    color: white;
+    padding:10px;
+    border: 1px solid  #f6f5f556;
+
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 8px 16px;
+    margin: 5px;
+    background-color: #f58a18f5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f58a18bd;
+}
+
+select {
+    padding: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.user h1 {
+    text-align: center;
+    color: #f58a1856;
+    margin-bottom: 20px;
+}

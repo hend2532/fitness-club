@@ -1,0 +1,56 @@
+.add-schedule {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #191919;
+    border-radius: 25px;
+    box-shadow: 0px 0px  5px 0px #f58a184a;
+    max-width: 550px;
+  }
+  
+  .add-schedule h1 {
+    text-align: center;
+    color: #f58a1856;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .form-group label {
+    margin-bottom: 7px;
+    color: #f58a18;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    resize: none;
+    padding: 10px;
+    color: #f7bf84be;
+    font-size: 16px;
+    border:1px solid #f58a1856;
+    border-radius: 10px;
+    width: 100%;
+    background: transparent;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #F58918;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  }
+  
+  button:hover {
+    background-color: #f58a1898;
+
+  }
+  

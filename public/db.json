@@ -1,0 +1,218 @@
+{
+  "users": [
+    {
+      "id": "0327",
+      "name": "hend",
+      "email": "admin@gmail.com",
+      "password": "123456789",
+      "role": "admin"
+    },
+    {
+      "id": "8ade",
+      "name": "hend",
+      "email": "admin1@gmail.com",
+      "password": "123456789",
+      "role": "user"
+    },
+    {
+      "id": "7ad1",
+      "name": "hend",
+      "email": "admin2@gmail.com",
+      "password": "123456789",
+      "role": "user"
+    }
+  ],
+  "schedule": [
+    {
+      "id": "1",
+      "courseName": "Yoga for Beginners",
+      "description": "Learn the basics of yoga to improve flexibility and reduce stress. Ideal for beginners.",
+      "deadline": "2024-12-11",
+      "duration": "4 weeks (1 session per week)",
+      "coachName": "Sarah Mitchell",
+      "coachDescription": "Certified yoga expert with 10 years of experience in enhancing physical and mental health.",
+      "spacesAvailable": "16",
+      "image": "/image/image2.jpg"
+    },
+    {
+      "id": "2",
+      "courseName": "HIIT Training",
+      "description": "High-Intensity Interval Training to boost cardiovascular fitness and burn calories fast.",
+      "deadline": "2024-12-15",
+      "duration": "6 weeks (2 sessions per week)",
+      "coachName": "James Carter",
+      "coachDescription": "Fitness coach specialized in strength training and HIIT workouts.",
+      "spacesAvailable": 10,
+      "image": "./assets/schedule.jfif"
+    },
+    {
+      "id": "3",
+      "courseName": "Strength and Conditioning",
+      "description": "Build strength and endurance through structured workouts.",
+      "deadline": "2024-11-30",
+      "duration": "8 weeks (3 sessions per week)",
+      "coachName": "Laura Smith",
+      "coachDescription": "Certified strength trainer with expertise in functional fitness.",
+      "spacesAvailable": 20,
+      "image": "./assets/schedule.jfif"
+    },
+    {
+      "id": "4",
+      "courseName": "Pilates Core Workout",
+      "description": "Focus on core strength and posture with beginner-friendly Pilates exercises.",
+      "deadline": "2024-12-20",
+      "duration": "5 weeks (1 session per week)",
+      "coachName": "Emily Davis",
+      "coachDescription": "Pilates instructor with 7 years of experience in helping clients improve posture and strength.",
+      "spacesAvailable": 12,
+      "image": "./assets/schedule.jfif"
+    },
+    {
+      "id": "5",
+      "courseName": "Zumba Dance Fitness",
+      "description": "Fun and energetic dance workout to improve coordination and burn calories.",
+      "deadline": "2024-11-25",
+      "duration": "4 weeks (2 sessions per week)",
+      "coachName": "Sophia Lopez",
+      "coachDescription": "Professional Zumba instructor with a passion for dance and fitness.",
+      "spacesAvailable": 18,
+      "image": "./assets/schedule.jfif"
+    },
+    {
+      "id": "6",
+      "courseName": "Functional Fitness Bootcamp",
+      "description": "Intense bootcamp sessions to enhance overall body fitness and agility.",
+      "deadline": "2024-12-05",
+      "duration": "6 weeks (3 sessions per week)",
+      "coachName": "Michael Johnson",
+      "coachDescription": "Bootcamp specialist with a focus on functional and endurance training.",
+      "spacesAvailable": 25,
+      "image": "./assets/schedule.jfif"
+    },
+    {
+      "id": "8e38",
+      "courseName": "for resr",
+      "description": "fggmlkrfkferokekwkje vdnsfjewejr",
+      "deadline": "2024-12-24",
+      "duration": "4 weeks (1 session per week)",
+      "coachName": "hend",
+      "coachDescription": "dkeoireorievmdfijeo",
+      "spacesAvailable": "10",
+      "image": ""
+    },
+    {
+      "id": "59cb",
+      "courseName": "got it",
+      "description": "djdskfsefok",
+      "deadline": "2024-12-17",
+      "duration": "4 weeks (1 session per week)",
+      "coachName": "hend",
+      "coachDescription": "mkxcksodseweirwejwejkwerwiu",
+      "spacesAvailable": "9",
+      "image": ""
+    },
+    {
+      "id": "b416",
+      "courseName": "got it 1",
+      "description": "vcfklgklfkertrtyj",
+      "deadline": "2024-12-18",
+      "duration": "l",
+      "coachName": "dklfd",
+      "coachDescription": "l;cvpodfop",
+      "spacesAvailable": 0,
+      "image": ""
+    }
+  ],
+  "trainers": [
+    {
+      "id": "1",
+      "img": "trainer.jfif",
+      "coachName": "John Carter",
+      "details": "Certified personal trainer with 8 years of experience in weight training and muscle building.",
+      "track": "Weight Training",
+      "rate": 4.8,
+      "servicesOffered": [
+        "Personalized Workout Plans",
+        "Nutrition Guidance",
+        "Body Fat Analysis"
+      ],
+      "certification": "Certified Strength and Conditioning Specialist (CSCS)",
+      "clientReview": "John is an amazing trainer who helped me achieve my fitness goals in just 6 months!"
+    },
+    {
+      "id": "2",
+      "img": "trainer.jfif",
+      "coachName": "Emily Stone",
+      "details": "Specialist in yoga and meditation with 10 years of teaching experience.",
+      "track": "Yoga and Mindfulness",
+      "rate": 4.9,
+      "servicesOffered": [
+        "Group Yoga Classes",
+        "One-on-One Sessions",
+        "Stress Management"
+      ],
+      "certification": "Registered Yoga Teacher (RYT-500)",
+      "clientReview": "Emily's classes have transformed my mental and physical health. Highly recommend her!"
+    },
+    {
+      "id": "3",
+      "img": "trainer.jfif",
+      "coachName": "Michael Lee",
+      "details": "Professional athlete and fitness coach focusing on endurance and cardiovascular fitness.",
+      "track": "Cardio Training",
+      "rate": 4.7,
+      "servicesOffered": [
+        "HIIT Sessions",
+        "Endurance Building",
+        "Fitness Assessments"
+      ],
+      "certification": "Certified Personal Trainer (CPT)",
+      "clientReview": "Michael's energy is contagious. His cardio sessions are intense but effective!"
+    },
+    {
+      "id": "4",
+      "img": "trainer.jfif",
+      "coachName": "Sophia Brown",
+      "details": "Experienced in pilates and flexibility improvement with 5 years of coaching.",
+      "track": "Pilates and Flexibility",
+      "rate": 4.6,
+      "servicesOffered": [
+        "Mat Pilates Classes",
+        "Posture Correction",
+        "Injury Recovery Exercises"
+      ],
+      "certification": "Certified Pilates Instructor (CPI)",
+      "clientReview": "Sophia is very patient and knowledgeable. Her pilates sessions are fantastic!"
+    },
+    {
+      "id": "5",
+      "img": "trainer.jfif",
+      "coachName": "Chris Taylor",
+      "details": "Expert in functional training and injury prevention with a background in sports medicine.",
+      "track": "Functional Training",
+      "rate": 4.8,
+      "servicesOffered": [
+        "Movement Analysis",
+        "Strengthening Programs",
+        "Rehabilitation Training"
+      ],
+      "certification": "Functional Movement Systems (FMS) Certified",
+      "clientReview": "Chris helped me recover from my knee injury and get back to sports quickly!"
+    },
+    {
+      "id": "6",
+      "img": "trainer.jfif",
+      "coachName": "Olivia Davis",
+      "details": "Nutritionist and fitness trainer focusing on weight loss and healthy living.",
+      "track": "Weight Loss",
+      "rate": 4.9,
+      "servicesOffered": [
+        "Diet Plans",
+        "Motivational Coaching",
+        "Weekly Progress Tracking"
+      ],
+      "certification": "Certified Nutrition Specialist (CNS)",
+      "clientReview": "Olivia's guidance made my weight loss journey enjoyable and sustainable!"
+    }
+  ]
+}

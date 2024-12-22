@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #2A2827;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact,.login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url("/public/assets/gym.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+}
+.contact::after,.login::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f58a1830;
+    z-index: 100;
+}
+.contact .contact1 {
+  background-color: #2A2827;
+  z-index: 200;
+  border-radius: 45px;
+  padding: 20px 40px;
+  color: #FFFFFF;
+  min-width: 280px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.contact .contact1 h1{
+  font-size: 18px;
+}
+.contact .contact1 p{
+  padding: 15px;
+
+}
+.contact .contact1 img {
+    width: 20px;
+    height: 20px;
+    padding-right: 20px;
+}
+.contact .contact2  ,.login .login1{
+  background-color: #D9D9D9;
+  border-radius: 45px;
+  padding: 20px;
+  min-width: 300px;
+  min-height: 300px;
+  z-index: 200;
+}
+/* .login{
+   display: flex;
+   transform: translate(0%,0%);
+} */
+.login .login1 {
+  background: #1F1B1A;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  padding-top:0 ;
+  
+}
+.login .login1 h1{
+    margin-bottom: 15px;
+}
+.login .login1 img{
+    width: 150px;
+    height: 150px;
+}
+ form{
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  min-width: 250px;
+}
+form .forget{
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #F58918;
+    margin-top: -10px;
+}
+
+.contact2 h1{
+    text-align: center;
+    margin: 10px;
+
+}
+input,textarea,button,a{
+    margin-bottom: 15px;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+textarea {
+    height: 50px;
+}
+
+button,a {
+    background-color: #F58918;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+}
+button:hover,a:hover{
+    background-color: #f58a18cc;
+
+}
+.account{
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.account span a{
+    color: #F58918;
+    font-weight: 600;
+    background: transparent;
+}
+.account span:hover,.forget:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #f58a18;
+}
+
+.error{
+    font-size: 12px;
+    color: red;
+    margin-top: -13px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    font-weight: 100;
+}
+.password{
+    display: flex;
+    height: 30px;
+    padding: 5px;
+    padding-right:10px ;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.password input{
+    border: 0; 
+    margin-top: 15px;
+}
+.password i{
+    font-size: 15px;
+    color: #979088;
+    cursor: pointer;
+}
+
+.schedule,.trainer,.services{
+    margin: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: #FCFBFC;
+}
+.schedule .schedule1,.trainer .trainer1,.services{
+    box-shadow: 0px 0px 5px 0px #F58918;
+    padding: 15px;
+    background: #191919;
+    border-radius: 10px;
+    min-width: 230px;
+    margin: auto;
+}
+.trainerDD{
+    width: 700px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+.services{
+    max-width: 700px !important;
+}
+.scheduleD {
+    height: 260px;
+    width: 300px;
+    padding-top: 40px !important;
+}
+.schedule .schedule1 h1,.trainer .trainer1 h1{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.schedule .schedule1 p,.trainer .trainer1 p{
+    color: #F58918;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.schedule .schedule1 h4,.trainer .trainer1 h4{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.schedule .schedule1 h3,.trainer .trainer1 h3,.services h3{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.schedule .schedule1 a,.schedule .schedule1 button,.trainer .trainer1 a,.trainer .trainer1 button{
+    float: right;
+}
+.schedule .schedule1 button,.trainer .trainer1 button{
+    margin: 10px;
+}
+.schedule  img,.trainer img{
+    width: 300px !important;
+    height: 300px !important;
+    border-radius: 5px;
+}
+.trainer1 {
+    padding: 0;
+}
+.trainer1 img{
+    width: 100% !important;
+    height: 200px !important;
+    border-radius: 10px;
+}
+.trainer1 h1{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-between;
+}
+.trainer1 p img{
+    width: 15px !important;
+    height: 15px !important;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.services .service1{
+    display: flex;
+    gap: 15px;
+    justify-content: space-evenly;
+    padding:10px;
+}
+.service1 div{
+    width: 40%;
+}
+.service1 p {
+    color: #F58918;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.services h4{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    width: 70%;
+    margin-left: -15%;
+}
+.services button{
+    float: right !important;
+    margin-left: 60%;
+
+}
+@media screen and (max-width:700px) {
+    .contact{
+        flex-direction: column-reverse;
+    }
+}
