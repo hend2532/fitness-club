@@ -306,7 +306,8 @@ button:hover,a:hover{
         flex-direction: column-reverse;
     }
     .login .login1{
-        width: 90%;
+        width: 80%;
+        margin: 20px;
     }
 }
 
