@@ -19,10 +19,10 @@ function Trainers() {
     <div className="trainer">
       {data.map((trainer) => {
         return <div key={trainer.id} className="trainer1">
-            <img src={`/public/assets/trainer.jfif`} alt={trainer.coachName}/>
+            <img src={`/assets/trainer.jfif`} alt={trainer.coachName}/>
             <h1>{trainer.coachName}
             <p style={{display:"inline"}}>{trainer.rate} 
-                <img src="/public/assets/star.png" alt="rate"/>
+                <img src="/assets/star.png" alt="rate"/>
             </p>
             </h1>
             <p>{trainer.track}</p>

@@ -80,7 +80,7 @@ function Login() {
   return (
     <div className="login">
       <div className="login1">
-        <img src="/public/logo.png" alt="call" />
+        <img src="/logo.png" alt="call" />
 
         <h1>LOG IN </h1>
         <form onSubmit={handleSubmit}>

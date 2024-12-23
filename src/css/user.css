@@ -27,9 +27,10 @@ td {
     background-color: #f9f9f9;
 }
 
-button {
+.user button {
     padding: 8px 16px;
     margin: 5px;
+    width: fit-content;
     background-color: #f58a18f5;
     color: white;
     border: none;

@@ -125,7 +125,7 @@ function ScheduleDetails() {
             <button onClick={handleBooking}>Confirm the booking</button>
           )}
         </div>
-        <img src={`/public/${schedule.image}`} alt={schedule.courseName} />
+        <img src={`/${schedule.image}`} alt={schedule.courseName} />
       </div>
       <TrainerReviews />
     </div>

@@ -28,7 +28,7 @@ function TrainerDetails() {
               <div key={trainer.id}>
                 <div className="trainer">
                   <img
-                    src={`/public/assets/${trainer.img}`}
+                    src={`/assets/${trainer.img}`}
                     alt={trainer.courseName}
                   />
                   <div className="trainerD trainer1">
@@ -36,7 +36,7 @@ function TrainerDetails() {
                       {trainer.coachName}
                       <p style={{ display: "inline" }}>
                         {trainer.rate}
-                        <img src="/public/assets/star.png" alt="rate" />
+                        <img src="/assets/star.png" alt="rate" />
                       </p>
                     </h1>
                     <p>{trainer.track}</p>
