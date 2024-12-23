@@ -305,6 +305,9 @@ button:hover,a:hover{
     .contact{
         flex-direction: column-reverse;
     }
+    .login .login1{
+        width: 90%;
+    }
 }
 
 

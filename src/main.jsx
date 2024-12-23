@@ -1,4 +1,5 @@
 // json-server --watch ./public/db.json --port 3001
+// https://fitness-club-lyart.vercel.app/
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
