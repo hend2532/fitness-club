@@ -9,14 +9,14 @@ function AdminDashboard() {
     return <Navigate to="/home" />;
   }
   return (
-    <div>
+    // <div>
       <div className="admin">
         <Link to="/adminDashboard/users">Users</Link>
         <Link to="/adminDashboard/schedule">Schedule</Link>
-        <Link to="/adminDashboard/trainers">Trainers</Link>
+        {/* <Link to="/adminDashboard/trainers">Trainers</Link> */}
       </div>
 
-    </div>
+    // </div>
   )
 }
 

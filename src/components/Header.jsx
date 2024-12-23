@@ -1,30 +1,89 @@
 import { useSelector, useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { logout } from "../redux/action";
-import "../css/header.css"
+import "../css/header.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+
 function Header() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const { isAuthenticated, user } = useSelector((state) => state.auth);
 
   const handleLogout = () => {
     dispatch(logout());
+    navigate("/home");
   };
 
   return (
     <div className="header">
-      <img src="/logo.png" alt="logo" />
+      <NavLink className="logo" to="/home">
+        <img src="/logo.png" alt="logo" />
+      </NavLink>
       <nav>
-        <Link to="/home">Home</Link>
-        <Link to="/schedule">Schedule</Link>
-        <Link to="/trainers">Trainers</Link>
-        {isAuthenticated && user.role === "admin" && (
-          <Link to="/adminDashboard">Admin</Link>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "nav-link active-link" : "nav-link"
+          }
+          to="/home"
+        >
+          Home
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "nav-link active-link" : "nav-link"
+          }
+          to="/schedule"
+        >
+          Schedule
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "nav-link active-link" : "nav-link"
+          }
+          to="/trainers"
+        >
+          Trainers
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "nav-link active-link" : "nav-link"
+          }
+          to="/contact"
+        >
+          Contact
+        </NavLink>
+        {isAuthenticated && user.role === "user" && (
+          <NavLink to="/profile" className={({ isActive }) =>
+            isActive ? "nav-link active-link" : "nav-link"
+          }>
+            <FontAwesomeIcon icon={faUser} />
+            
+          </NavLink>
         )}
-        <Link to="/contact">Contact</Link>
+        {isAuthenticated && user.role === "admin" && (
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "nav-link active-link" : "nav-link"
+            }
+            to="/adminDashboard"
+          >
+            Admin
+          </NavLink>
+        )}
         {isAuthenticated ? (
-          <button className="logoutButton" onClick={handleLogout}>Logout</button>
+          <button className="logoutButton" onClick={handleLogout}>
+            Logout
+          </button>
         ) : (
-          <Link className="loginButton" to="/login">Login</Link>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "loginButton active-link" : "loginButton"
+            }
+            to="/login"
+          >
+            Login
+          </NavLink>
         )}
       </nav>
     </div>

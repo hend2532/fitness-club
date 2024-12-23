@@ -6,7 +6,6 @@ import { faEdit, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 function Schedule() {
   const [data, setData] = useState([]);
 
-
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -19,11 +18,10 @@ function Schedule() {
     fetchData();
   }, []);
 
-  // حذف الجدول
   const handleDelete = async (id) => {
     try {
       await axios.delete(`http://localhost:3001/schedule/${id}`);
-      // تحديث البيانات بعد الحذف
+
       setData((prevData) => prevData.filter((schedule) => schedule.id !== id));
       alert("Schedule deleted successfully!");
     } catch (error) {
@@ -35,7 +33,7 @@ function Schedule() {
   return (
     <>
       <Link to="/addSchedule" className="add">
-       Add New Schedule
+        Add New Schedule
       </Link>
       <div className="schedule">
         {data.map((schedule) => (
@@ -46,13 +44,16 @@ function Schedule() {
             <h4>{schedule.coachName}</h4>
             <h3>Only {schedule.spacesAvailable} places left!</h3>
             <div className="icon">
-            <Link to={`/edit-schedule/${schedule.id}`} className="edit-link">
-            <FontAwesomeIcon icon={faEdit} />
-            </Link>
-          
-            <button onClick={() => handleDelete(schedule.id)} className="delete-btn">
-            <FontAwesomeIcon icon={faTrashAlt} />
-            </button>
+              <Link to={`/edit-schedule/${schedule.id}`} className="edit-link">
+                <FontAwesomeIcon icon={faEdit} />
+              </Link>
+
+              <button
+                onClick={() => handleDelete(schedule.id)}
+                className="delete-btn"
+              >
+                <FontAwesomeIcon icon={faTrashAlt} />
+              </button>
             </div>
           </div>
         ))}

@@ -1,0 +1,97 @@
+.profile {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  box-shadow: 0px 0px 5px 0px #f58918;
+}
+.profile h1 {
+  text-align: center;
+  color: #f58918;
+}
+.profile-info p {
+  margin: 10px 0;
+  color: #fff;
+}
+
+.profile-actions a {
+  margin-left: 20%;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 15px;
+  background-color: #f58918;
+  color: #fff;
+  cursor: pointer;
+}
+
+.profile-actions a:hover {
+  background-color: #d9760f;
+}
+
+.schedule-table table {
+  width: 80%;
+  border-collapse: collapse;
+}
+.schedule-table h2 {
+  text-align: center;
+  color: #685642;
+  margin: 40px;
+}
+.schedule-table th,
+.schedule-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.schedule-table th {
+  background-color: #f58918;
+  color: white;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+  background-color: black;
+}
+
+.reviews {
+  margin: 30px 0;
+  padding: 30px;
+  background-color: rgb(19, 19, 19);
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0px 0px 5px 0px #F58918;
+  margin: auto;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.reviews textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #f58918;
+  margin: 10px;
+  margin-left: 0;
+  color: #f58918;
+}
+
+.reviews button {
+  padding: 10px 20px;
+  background-color: #f58918;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.reviews-list {
+  margin-top: 20px;
+}
+.reviews-list h4{
+  color: #f58918;
+}
+
+.reviews-list div {
+  margin-bottom: 10px;
+}

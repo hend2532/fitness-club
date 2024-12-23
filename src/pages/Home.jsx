@@ -1,7 +1,6 @@
 
 
-import "../css/Home.css";  // قم بإنشاء ملف CSS لتنسيق الصفحة
-
+import "../css/Home.css"; 
 function Home() {
   return (
 <div>Home</div>

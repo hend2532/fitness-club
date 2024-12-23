@@ -13,40 +13,42 @@ import ScheduleAdmin from './components/ScheduleAdmin';
 import EditSchedule from './components/EditSchedule';
 import AddSchedule from './components/AddSchedule';
 import ProtectedRoute from './components/ProtectedRoute';  // استيراد ProtectedRoute
-// import { AuthProvider } from './components/AuthContext.jsx';
 import Home from './pages/Home.jsx';
+import Profile from './pages/Profile.jsx';
+import EditProfile from './components/EditProfile.jsx';
+import Header from './components/Header.jsx';
 
 function App() {
   return (
-    // <AuthProvider>
-    <Routes>
-      <Route path="/home" element={<Home />} />
+     <Routes>
       <Route path="/" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/schedule" element={<Schedule />} />
-      <Route path="/schedule/:id" element={<ScheduleDetails />} />
-      <Route path="/trainers" element={<Trainers />} />
-      <Route path="/trainers/:id" element={<TrainerDetails />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/home" element={ <><Header/><Home /></>} />
+      <Route path="/schedule" element={<><Header/><Schedule /></>} />
+      <Route path="/schedule/:id" element={<><Header/><ScheduleDetails /></>} />
+      <Route path="/trainers" element={<><Header/><Trainers /></>} />
+      <Route path="/trainers/:id" element={<><Header/><TrainerDetails /></>} />
+      <Route path="/contact" element={<><Header/><Contact /></>} />
+      <Route path="/profile" element={<><Header/><Profile /></>} />
+      <Route path="/EditProfile" element={<><Header/><EditProfile /></>} />
 
-      {/* حماية صفحات admin باستخدام ProtectedRoute */}
       <Route 
         path="/adminDashboard" 
-        element={<ProtectedRoute requiredRole="admin"><AdminDashboard /></ProtectedRoute>} 
+        element={<><Header/><ProtectedRoute requiredRole="admin"><AdminDashboard /></ProtectedRoute></>} 
       />
       <Route 
         path="/adminDashboard/users" 
-        element={<ProtectedRoute requiredRole="admin"><Users /></ProtectedRoute>} 
+        element={<><Header/><ProtectedRoute requiredRole="admin"><Users /></ProtectedRoute></>} 
       />
       <Route 
         path="/adminDashboard/schedule" 
-        element={<ProtectedRoute requiredRole="admin"><ScheduleAdmin /></ProtectedRoute>} 
+        element={<><Header/><ProtectedRoute requiredRole="admin"><ScheduleAdmin /></ProtectedRoute></>} 
       />
-      <Route path="/edit-schedule/:id" element={<EditSchedule />} />
-      <Route path="/addSchedule" element={<AddSchedule />} />
+      <Route path="/edit-schedule/:id" element={<><Header/><EditSchedule /></>} />
+      <Route path="/addSchedule" element={<><Header/><AddSchedule /></>} />
     </Routes>
-    // </AuthProvider>
+    
   );
 }
 

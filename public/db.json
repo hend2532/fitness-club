@@ -11,8 +11,15 @@
       "id": "8ade",
       "name": "hend",
       "email": "admin1@gmail.com",
-      "password": "123456789",
-      "role": "user"
+      "password": "1234",
+      "role": "user",
+      "booking": [
+        {
+          "scheduleId": "1",
+          "courseName": "Yoga for Beginners",
+          "coachName": "Sarah Mitchell"
+        }
+      ]
     },
     {
       "id": "7ad1",
@@ -31,8 +38,8 @@
       "duration": "4 weeks (1 session per week)",
       "coachName": "Sarah Mitchell",
       "coachDescription": "Certified yoga expert with 10 years of experience in enhancing physical and mental health.",
-      "spacesAvailable": "16",
-      "image": "/image/image2.jpg"
+      "spacesAvailable": 8,
+      "image": "./assets/schedule.jfif"
     },
     {
       "id": "2",
@@ -42,7 +49,7 @@
       "duration": "6 weeks (2 sessions per week)",
       "coachName": "James Carter",
       "coachDescription": "Fitness coach specialized in strength training and HIIT workouts.",
-      "spacesAvailable": 10,
+      "spacesAvailable": 5,
       "image": "./assets/schedule.jfif"
     },
     {
@@ -53,7 +60,7 @@
       "duration": "8 weeks (3 sessions per week)",
       "coachName": "Laura Smith",
       "coachDescription": "Certified strength trainer with expertise in functional fitness.",
-      "spacesAvailable": 20,
+      "spacesAvailable": 19,
       "image": "./assets/schedule.jfif"
     },
     {
@@ -121,6 +128,17 @@
       "coachDescription": "l;cvpodfop",
       "spacesAvailable": 0,
       "image": ""
+    },
+    {
+      "id": "76bb",
+      "courseName": "day23",
+      "description": "dfferte",
+      "deadline": "2024-12-25",
+      "duration": "4 weeks (1 session per week)",
+      "coachName": "jak",
+      "coachDescription": "fgrtrrte",
+      "spacesAvailable": "7",
+      "image": "/images/image3.jpg"
     }
   ],
   "trainers": [

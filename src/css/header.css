@@ -7,6 +7,10 @@
     margin-bottom: 30px
     ;
 }
+.header .logo{
+    text-decoration: none;
+    background: transparent;
+}
 .header img{
     width: 80px;
 }
@@ -45,3 +49,20 @@
     justify-content: center;
     gap: 20px;
 }
+.nav-link {
+    text-decoration: none;
+    /* color: #444; */
+    padding: 10px 15px;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #0f0904;
+  }
+  
+  .active-link {
+    color: #f58918;
+    font-weight: bold;
+    border-bottom: 2px solid #f58918;
+  }
+  
