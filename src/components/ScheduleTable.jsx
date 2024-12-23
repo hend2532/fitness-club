@@ -38,7 +38,7 @@ function ScheduleTable() {
     <div className="schedule-table">
       <h2>Your Booked Schedules</h2>
       {bookings.length === 0 ? (
-        <p>No bookings found.</p>
+        <p className="noData">No bookings found.</p>
       ) : (
         <table>
           <thead>

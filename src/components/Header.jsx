@@ -4,12 +4,13 @@ import { logout } from "../redux/action";
 import "../css/header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+// import { useState } from "react";
 
 function Header() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { isAuthenticated, user } = useSelector((state) => state.auth);
-
+  // const [menuOpen, setMenuOpen] = useState(false);
   const handleLogout = () => {
     dispatch(logout());
     navigate("/home");
@@ -20,7 +21,7 @@ function Header() {
       <NavLink className="logo" to="/home">
         <img src="/logo.png" alt="logo" />
       </NavLink>
-      <nav>
+      <nav >
         <NavLink
           className={({ isActive }) =>
             isActive ? "nav-link active-link" : "nav-link"
@@ -71,6 +72,7 @@ function Header() {
             Admin
           </NavLink>
         )}
+      </nav>
         {isAuthenticated ? (
           <button className="logoutButton" onClick={handleLogout}>
             Logout
@@ -85,7 +87,6 @@ function Header() {
             Login
           </NavLink>
         )}
-      </nav>
     </div>
   );
 }

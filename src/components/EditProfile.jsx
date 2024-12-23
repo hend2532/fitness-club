@@ -42,16 +42,18 @@ function EditProfile() {
 
   return (
     <div className="add-schedule">
-      <h2>Edit Profile</h2>
+      <h1>Edit Profile</h1>
       <form  onSubmit={handleSubmit}>
-        <div>
+        <div className="form-group">
+
+        <div >
           <label>Name</label>
           <input
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Enter your name"
-          />
+            />
         </div>
         <div className="input-group">
           <label>Email</label>
@@ -60,7 +62,7 @@ function EditProfile() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email"
-          />
+            />
         </div>
         <div className="input-group">
           <label>Password</label>
@@ -69,8 +71,9 @@ function EditProfile() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Enter your password"
-          />
+            />
         </div>
+            </div>
 
         <button type="submit">Save Changes</button>
       </form>

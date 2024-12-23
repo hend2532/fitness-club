@@ -42,6 +42,15 @@ function Users() {
       })
       .catch((err) => console.error(err));
   };
+  const handleDeleteClick = (userId) => {
+    fetch(`http://localhost:3001/users/${userId}`, {
+      method: "DELETE",
+    })
+      .then(() => {
+        setUsers(users.filter((user) => user.id !== userId));
+      })
+      .catch((err) => console.error("Error deleting user:", err));
+  };
 
   useEffect(() => {
     fetchUsers();
@@ -80,6 +89,9 @@ function Users() {
                 ) : (
                   <button onClick={() => handleEditClick(user)}>Edit</button>
                 )}
+                <button onClick={() => handleDeleteClick(user.id)}>
+                  Delete
+                </button>
               </td>
             </tr>
           ))}

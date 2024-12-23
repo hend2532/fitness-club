@@ -2,38 +2,70 @@ import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
-import TrainerReviews from "../components/TrainerReviews"
+import TrainerReviews from "../components/TrainerReviews";
+
 function ScheduleDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
-
-  const { user } = useSelector((state) => state.auth);
-
+  const { user } = useSelector((state) => state.auth); 
   const [schedule, setSchedule] = useState(null);
   const [count, setCount] = useState(0);
-
+  const [currentUserBookings, setCurrentUserBookings] = useState([]); 
   useEffect(() => {
-    const fetchSchedule = async () => {
+    const fetchScheduleAndUserBookings = async () => {
       try {
-        const response = await axios.get(
+
+        const scheduleResponse = await axios.get(
           `http://localhost:3001/schedule/${id}`
         );
-        setSchedule(response.data);
-        setCount(response.data.spacesAvailable);
+        setSchedule(scheduleResponse.data);
+        setCount(scheduleResponse.data.spacesAvailable);
+
+
+        if (user) {
+          const userResponse = await axios.get(
+            `http://localhost:3001/users?email=${user.email}`
+          );
+          if (userResponse.data.length > 0) {
+            setCurrentUserBookings(userResponse.data[0].booking || []);
+          }
+        }
       } catch (error) {
-        console.error("Error fetching schedule:", error);
+        console.error("Error fetching data:", error);
       }
     };
-    fetchSchedule();
-  }, [id]);
+
+    fetchScheduleAndUserBookings();
+  }, [id, user]);
 
   const handleBooking = async () => {
-    if (count > 0 && user) {
+    if (!user) {
+      alert("You need to log in to book a spot!");
+      navigate("/login");
+      return;
+    }
+
+    if (user.role === "admin") {
+      alert("Admins cannot book courses.");
+      return;
+    }
+
+    if (count > 0) {
       try {
+        const isAlreadyBooked = currentUserBookings.some(
+          (booking) => booking.scheduleId === schedule.id
+        );
+
+        if (isAlreadyBooked) {
+          alert("You have already booked this course!");
+          return;
+        }
+
+  
         setCount((prev) => prev - 1);
 
         const updatedBookings = [
-          ...(user.booking || []),
+          ...currentUserBookings,
           {
             scheduleId: schedule.id,
             courseName: schedule.courseName,
@@ -50,6 +82,7 @@ function ScheduleDetails() {
         }
 
         const userId = userResponse.data[0].id;
+
         const updatedUserData = {
           ...userResponse.data[0],
           booking: updatedBookings,
@@ -70,7 +103,7 @@ function ScheduleDetails() {
         console.error("Error making booking:", error);
       }
     } else {
-      alert("No spots left or user not logged in!");
+      alert("No spots left!");
     }
   };
 
@@ -87,13 +120,14 @@ function ScheduleDetails() {
           <h4>{schedule.coachName}</h4>
           <h4>{schedule.coachDescription}</h4>
           <h3>{count} spots left – book yours now</h3>
-          <button onClick={() => handleBooking(schedule)}>
-            Confirm the booking
-          </button>
+          {user?.role !== "admin" && ( 
+            
+            <button onClick={handleBooking}>Confirm the booking</button>
+          )}
         </div>
         <img src={`/public/${schedule.image}`} alt={schedule.courseName} />
       </div>
-      <TrainerReviews/>
+      <TrainerReviews />
     </div>
   );
 }
