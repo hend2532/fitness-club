@@ -12,7 +12,7 @@ import Users from './components/Users';
 import ScheduleAdmin from './components/ScheduleAdmin';
 import EditSchedule from './components/EditSchedule';
 import AddSchedule from './components/AddSchedule';
-import ProtectedRoute from './components/ProtectedRoute';  // استيراد ProtectedRoute
+import ProtectedRoute from './components/ProtectedRoute';  
 import Home from './pages/Home.jsx';
 import Profile from './pages/Profile.jsx';
 import EditProfile from './components/EditProfile.jsx';

@@ -24,6 +24,11 @@
           "scheduleId": "2",
           "courseName": "HIIT Training",
           "coachName": "James Carter"
+        },
+        {
+          "scheduleId": "4",
+          "courseName": "Pilates Core Workout",
+          "coachName": "Emily Davis"
         }
       ]
     },
@@ -77,7 +82,7 @@
       "duration": "5 weeks (1 session per week)",
       "coachName": "Emily Davis",
       "coachDescription": "Pilates instructor with 7 years of experience in helping clients improve posture and strength.",
-      "spacesAvailable": 10,
+      "spacesAvailable": 9,
       "image": "./assets/schedule.jfif"
     },
     {
