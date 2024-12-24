@@ -33,11 +33,23 @@
       ]
     },
     {
-      "id": "7ad1",
+      "id": "1478",
       "name": "hend",
-      "email": "admin2@gmail.com",
-      "password": "123456789",
-      "role": "user"
+      "email": "hend@gmail.com",
+      "password": "12345678",
+      "role": "admin",
+      "booking": [
+        {
+          "scheduleId": "1",
+          "courseName": "Yoga for Beginners",
+          "coachName": "Sarah Mitchell"
+        },
+        {
+          "scheduleId": "2",
+          "courseName": "HIIT Training",
+          "coachName": "James Carter"
+        }
+      ]
     }
   ],
   "schedule": [
@@ -49,18 +61,18 @@
       "duration": "4 weeks (1 session per week)",
       "coachName": "Sarah Mitchell",
       "coachDescription": "Certified yoga expert with 10 years of experience in enhancing physical and mental health.",
-      "spacesAvailable": 6,
+      "spacesAvailable": 5,
       "image": "./assets/schedule.jfif"
     },
     {
       "id": "2",
-      "courseName": "HIIT Training",
+      "courseName": "HIIT test",
       "description": "High-Intensity Interval Training to boost cardiovascular fitness and burn calories fast.",
       "deadline": "2024-12-15",
       "duration": "6 weeks (2 sessions per week)",
       "coachName": "James Carter",
       "coachDescription": "Fitness coach specialized in strength training and HIIT workouts.",
-      "spacesAvailable": 7,
+      "spacesAvailable": "9",
       "image": "./assets/schedule.jfif"
     },
     {
@@ -161,6 +173,28 @@
       "coachDescription": "dsdewerwe",
       "spacesAvailable": "8",
       "image": "/images/image4.jpg"
+    },
+    {
+      "id": "0431",
+      "courseName": "first",
+      "description": "didfoiefroiweroiu",
+      "deadline": "2024-12-25",
+      "duration": "4 weeks (1 session per week)",
+      "coachName": "yoga",
+      "coachDescription": "KDFDFIDUOPF",
+      "spacesAvailable": "6",
+      "image": "/images/image2.jpg"
+    },
+    {
+      "id": "8b35",
+      "courseName": "for test ",
+      "description": "hello",
+      "deadline": "2024-12-25",
+      "duration": "4 weeks (1 session per week)",
+      "coachName": "hany",
+      "coachDescription": "helo",
+      "spacesAvailable": "14",
+      "image": "/images/image2.jpg"
     }
   ],
   "trainers": [

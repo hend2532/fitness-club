@@ -2,6 +2,7 @@ import "../css/Home.css";
 import Slider from "../components/Slider";
 import Join from "../components/Join";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -102,7 +103,9 @@ function Home() {
               Having good schedules and trainers can really make a difference in a fitness club. It keeps you motivated and ensures you're getting the best guidance. What kind of workouts are you interested in?
             </p>
             <p className="row-div-explore">
-              Explore more <span className="row-div-arrow">→</span>
+            <Link className="ex" to="/trainers">
+            Explore more <span className="row-div-arrow">→</span>
+            </Link>  
             </p>
           </div>
 
@@ -120,7 +123,9 @@ function Home() {
               Well-planned schedules provide structure and consistency, helping individuals stay committed and reach their fitness goals more efficiently. What kind of workouts are you interested in?
             </p>
             <p className="row-div-explore">
-              Explore more <span className="row-div-arrow">→</span>
+            <Link to="/schedule">
+             Explore more <span className="row-div-arrow">→</span>
+            </Link> 
             </p>
           </div>
         </div>
