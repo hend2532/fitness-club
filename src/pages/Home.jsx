@@ -1,5 +1,7 @@
-import "../css/Home.css";  // تأكد من المسار الصحيح لملف الـ CSS
+import "../css/Home.css"; 
 import Slider from "../components/Slider";
+import Join from "../components/Join";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -51,7 +53,7 @@ function Home() {
 
           <div className="heart-rate">
             <img
-              src="/assets/heart.jpg"
+              src="/assets/heart.png"
               alt=""
               className="heart"
             />
@@ -65,7 +67,7 @@ function Home() {
           />
           <div className="calories">
             <img
-              src="/assets/calories.jpg"
+              src="/assets/calories.png"
               alt=""
               className="calory"
             />
@@ -77,21 +79,21 @@ function Home() {
         </div>
       </div>
       <div className="programs" id="programs">
-        {/* Header Section */}
+
         <div className="programs-header">
           <span className="strok-text">Explore Our </span>
           <span className="between">Programs</span>
           <span className="strok-text">To Shape You</span>
         </div>
 
-        {/* Row Divs Section */}
+  
         <div className="row-divs-container">
-          {/* First Div */}
+      
           <div className="row-div" id="div1">
             <div className="row-div-header">
               <h2 className="row-div-title">Good trainers</h2>
               <img
-                src="/assets/courses.jpg"
+                src="/assets/courses.png"
                 className="row-div-icon"
                 alt="trainer"
               />
@@ -104,12 +106,12 @@ function Home() {
             </p>
           </div>
 
-          {/* Second Div */}
+   
           <div className="row-div">
             <div className="row-div-header">
               <h2 className="row-div-title">Good Schedules</h2>
               <img
-                src= "/assets/diet.jpg"
+                src= "/assets/courses.png"
                 className="row-div-icon"
                 alt="diet"
               />
@@ -123,6 +125,8 @@ function Home() {
           </div>
         </div>
         <Slider />
+        <Join/>
+        <Footer/>
       </div>
     </div>
   );

@@ -73,30 +73,30 @@
   
   @media (max-width: 768px) {
     .header {
-        flex-direction: column; /* تغيير الاتجاه إلى عمودي */
+        flex-direction: column; 
         height: auto;
         gap: 15px;
     }
 
     .header img {
-        width: 60px; /* تقليل حجم الشعار */
+        width: 60px; 
     }
 
     .header nav {
-        flex-direction: column; /* تغيير الاتجاه إلى عمودي */
-        width: 100%; /* ملء العرض */
+        flex-direction: column;
+        width: 100%; 
         gap: 15px;
     }
 
     .loginButton, .logoutButton {
-        width: auto; /* السماح بالحجم التلقائي */
+        width: auto;
         padding: 8px 15px;
     }
 }
 
 @media (max-width: 480px) {
     .header {
-        padding: 10px; /* تقليل التباعد */
+        padding: 10px; 
     }
 
     .header nav {
@@ -105,11 +105,12 @@
     }
 
     .header img {
-        width: 50px; /* تقليل حجم الشعار أكثر */
+        width: 50px; 
     }
 
     .loginButton, .logoutButton {
-        font-size: 12px; /* تقليل حجم الخط */
-        padding: 5px 10px; /* تقليل الحشوة */
+        font-size: 12px; 
+        padding: 5px 10px;
     }
 }
+
