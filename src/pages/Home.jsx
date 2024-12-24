@@ -9,7 +9,7 @@ function Home() {
       <div className="hero">
         <div className="left-h">
           <div className="the-best-ad">
-            <div>THE BEST</div>
+            <div >THE BEST</div>
             <span>FITNESS CLUB IN THE TOWN</span>
           </div>
 
